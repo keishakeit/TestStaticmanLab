@@ -1,0 +1,109 @@
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="http://erl.im/assets/main.css?v=0.2.4">
+<div id="commentContainer" class="comment-container"><form method="POST" action="https://jekyll-comment-server.vercel.app/post-comment" class="comment__form clearfix" id="newComment">
+  <input name="options[slug]" type="hidden" value="kindlepush">
+  <input name="options[title]" type="hidden" value="利用Scrapy + gitbook做kindle电子报推送">
+  <input name="options[url]" type="hidden" value="https://erl.im/blog/kindlepush.html">
+  <input name="options[replyTo]" type="hidden" value="">
+  <input name="fields[parent]" type="hidden" value="">
+  <div class="comment-left">
+    <div class="comment__avatar">
+      <img src="https://www.gravatar.com/avatar/?d=mm&amp;s=54" id="visitorAvatar">
+    </div>
+  </div>
+  <div class="comment-right new-comment-right">
+     <div class="comment__box">
+       <div class="comment__box_top hide" id="visitorInfo">
+         <div class="input-group">
+            <input type="text" name="fields[name]" placeholder="*昵称" class="form-control form-control-name" required="" autocomplete="true">
+            <label class="input-label"><svg class="icon__stroke" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+  <circle cx="12" cy="7" r="4"></circle>
+</svg>
+</label>
+          </div>
+          <div class="input-group">
+            <input type="text" placeholder="*邮箱" class="form-control" required="" name="fields[email]" autocomplete="true">
+            <label class="input-label"><svg class="icon__stroke" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+  <polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+</label>
+          </div>
+          <div class="input-group">
+            <input type="text" placeholder="链接" class="form-control" name="fields[url]" autocomplete="true">
+            <label class="input-label"><svg class="icon__stroke" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+</svg>
+</label>
+          </div>
+        </div>
+      <div class="comment__box_center">
+        <textarea name="fields[message]" class="form-control message-text" placeholder="说点什么吧..."></textarea>
+        <span class="message-arrow"></span>
+      </div>
+      <div class="comment__box_bottom"><div class="comment__smileys" id="smileyContainer">
+  <div class="comment__smileys_box" id="smileyBox"><a href="#" data-smiley=":neutral:" data-src="https://d33wubrfki0l68.cloudfront.net/c8a4f6a839de217ca5bf7cb0102a200880a606e3/58d6d/smileys/neutral.gif" class="comment__smiley">
+      <img src="https://d33wubrfki0l68.cloudfront.net/c8a4f6a839de217ca5bf7cb0102a200880a606e3/58d6d/smileys/neutral.gif" alt="neutral">
+    </a><a href="#" data-smiley=":cold:" data-src="https://d33wubrfki0l68.cloudfront.net/0c1a8ad46839162cf1ecc13c8eb7988c5fb87437/34acb/smileys/cold.gif" class="comment__smiley">
+      <img src="https://d33wubrfki0l68.cloudfront.net/0c1a8ad46839162cf1ecc13c8eb7988c5fb87437/34acb/smileys/cold.gif" alt="cold">
+    </a><a href="#" data-smiley=":confused:" data-src="https://d33wubrfki0l68.cloudfront.net/48b33d49bd0316637500ed1f97d846bb92dc0ff3/67381/smileys/confused.gif" class="comment__smiley">
+      <img src="https://d33wubrfki0l68.cloudfront.net/48b33d49bd0316637500ed1f97d846bb92dc0ff3/67381/smileys/confused.gif" alt="confused">
+    </a><a href="#" data-smiley=":twisted:" data-src="https://d33wubrfki0l68.cloudfront.net/f1dd7fdc3b01acf0eebeca3ddd64bf71fdc50eb7/17c09/smileys/twisted.gif" class="comment__smiley">
+      <img src="https://d33wubrfki0l68.cloudfront.net/f1dd7fdc3b01acf0eebeca3ddd64bf71fdc50eb7/17c09/smileys/twisted.gif" alt="twisted">
+    </a><a href="#" data-smiley=":exclaim:" data-src="https://d33wubrfki0l68.cloudfront.net/00b440e27b22b923864e3ba2b2a4bad12ed272de/a7b3b/smileys/exclaim.gif" class="comment__smiley">
+      <img src="https://d33wubrfki0l68.cloudfront.net/00b440e27b22b923864e3ba2b2a4bad12ed272de/a7b3b/smileys/exclaim.gif" alt="exclaim">
+    </a><a href="#" data-smiley=":accost:" data-src="https://d33wubrfki0l68.cloudfront.net/463f7cc0063253ef15a3d08906803588876e0b16/613ae/smileys/accost.gif" class="comment__smiley">
+      <img src="https://d33wubrfki0l68.cloudfront.net/463f7cc0063253ef15a3d08906803588876e0b16/613ae/smileys/accost.gif" alt="accost">
+    </a><a href="#" data-smiley=":lol:" data-src="https://d33wubrfki0l68.cloudfront.net/515c5882c3f2df30e4823946ac9d01323f2ae8b5/4c050/smileys/lol.gif" class="comment__smiley">
+      <img src="https://d33wubrfki0l68.cloudfront.net/515c5882c3f2df30e4823946ac9d01323f2ae8b5/4c050/smileys/lol.gif" alt="lol">
+    </a><a href="#" data-smiley=":eek:" data-src="https://d33wubrfki0l68.cloudfront.net/36abd78adb28c81b40447d1794cef4efb4e41d4a/1b2f7/smileys/eek.gif" class="comment__smiley">
+      <img src="https://d33wubrfki0l68.cloudfront.net/36abd78adb28c81b40447d1794cef4efb4e41d4a/1b2f7/smileys/eek.gif" alt="eek">
+    </a><a href="#" data-smiley=":cry:" data-src="https://d33wubrfki0l68.cloudfront.net/1dff0bb979e032ab0156bc42cc28f841b13e67af/e1803/smileys/cry.gif" class="comment__smiley">
+      <img src="https://d33wubrfki0l68.cloudfront.net/1dff0bb979e032ab0156bc42cc28f841b13e67af/e1803/smileys/cry.gif" alt="cry">
+    </a><a href="#" data-smiley=":smile:" data-src="https://d33wubrfki0l68.cloudfront.net/cc71b72aa6654c8b9bc56666740d0209a44161b2/1afa6/smileys/smile.gif" class="comment__smiley">
+      <img src="https://d33wubrfki0l68.cloudfront.net/cc71b72aa6654c8b9bc56666740d0209a44161b2/1afa6/smileys/smile.gif" alt="smile">
+    </a><a href="#" data-smiley=":razz:" data-src="https://d33wubrfki0l68.cloudfront.net/797c42a1489b306520ad2b4ff9c20be4cc5109e6/a3f73/smileys/razz.gif" class="comment__smiley">
+      <img src="https://d33wubrfki0l68.cloudfront.net/797c42a1489b306520ad2b4ff9c20be4cc5109e6/a3f73/smileys/razz.gif" alt="razz">
+    </a><a href="#" data-smiley=":silent:" data-src="https://d33wubrfki0l68.cloudfront.net/9eda6409f12022f17f9fee2608418c4be3462654/63f39/smileys/silent.gif" class="comment__smiley">
+      <img src="https://d33wubrfki0l68.cloudfront.net/9eda6409f12022f17f9fee2608418c4be3462654/63f39/smileys/silent.gif" alt="silent">
+    </a><a href="#" data-smiley=":biggrin:" data-src="https://d33wubrfki0l68.cloudfront.net/04c6d4c82144eba886ca9a7fa3f2c35626f07b35/1a5bf/smileys/biggrin.gif" class="comment__smiley">
+      <img src="https://d33wubrfki0l68.cloudfront.net/04c6d4c82144eba886ca9a7fa3f2c35626f07b35/1a5bf/smileys/biggrin.gif" alt="biggrin">
+    </a><a href="#" data-smiley=":think:" data-src="https://d33wubrfki0l68.cloudfront.net/4f7c53ae332bb07b48bca008e5898ce3b0206666/3b3cc/smileys/think.gif" class="comment__smiley">
+      <img src="https://d33wubrfki0l68.cloudfront.net/4f7c53ae332bb07b48bca008e5898ce3b0206666/3b3cc/smileys/think.gif" alt="think">
+    </a></div>
+  <div class="comment__smileys_toggler"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon__stroke">
+  <circle cx="12" cy="12" r="10"></circle>
+  <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+  <line x1="9" y1="9" x2="9.01" y2="9"></line>
+  <line x1="15" y1="9" x2="15.01" y2="9"></line>
+</svg>
+</div>
+</div>
+<div class="comment__hint" id="commentHint">
+        </div>
+        <button type="submit" class="submit-btn" id="submitBtn" >Enmmm..</button>
+      </div>
+    </div>
+  </div>
+</form>
+<div class="comment__list" id="commentsList"><div class="comment" id="comment-1">
+  <div class="comment-main clearfix">
+    <div class="comment-left">
+      <div class="comment__avatar"><img src="https://www.gravatar.com/avatar/8f8195c9c36d6c98e8bcade3e3ac69fe?d=mm&amp;s=45"></div>
+    </div>
+    <div class="comment-right">
+      <div class="comment__meta"><a class="comment__author" href="https://erl.im" target="_blank" rel="nofollow">叶夕青兮</a><span class="comment__date">2020-04-11 12:45</span>
+      </div>
+      <div class="comment__content">
+        <p>测试评论</p>
+
+      </div>
+       <div class="comment__reply">
+         <a href="#commentContainer" class="reply-btn" data-reply-to="1" data-reply-id="8f8195c9c36d6c98e8bcade3e3ac69fe">回复</a>
+       </div>
+    </div>
+  </div></div>
+</div>
+</div>
