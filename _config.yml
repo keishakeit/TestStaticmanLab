@@ -12,5 +12,5 @@ github_username:  VincentTam
 markdown: kramdown
 
 staticman:
-  api: "https://jekyll-comment-server.vercel.app/post-comment"
+  api: "https://dev.staticman.net/v3/entry/github/keishakeit/TestStaticmanLab/master/comments"
   path: "_data/comments/test-slug"
